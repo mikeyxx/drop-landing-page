@@ -1,5 +1,4 @@
-import React from 'react';
-import { Car, Clock, Shield, Star, Smartphone, Users, MapPin, CreditCard } from 'lucide-react';
+import { Clock, Shield, Star, MapPin, CreditCard } from 'lucide-react';
 
 const LandingPage = () => {
   return (
@@ -10,20 +9,26 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                Your Ride, 
+                Your Ride,
                 <span className="text-secondary-400"> Dropped </span>
                 Right Here
               </h1>
-              <p className="text-xl text-primary-100 mb-8 max-w-lg">
-                Experience seamless transportation with Drop. Safe, reliable rides 
+              {/* <p className="text-xl text-primary-100 mb-8 max-w-lg">
+                Experience seamless transportation with Drop. Safe, reliable rides
                 at your fingertips, whenever you need them.
+              </p> */}
+              <p className="text-xl text-primary-100 mb-8 max-w-lg">
+                Launching soon in Ibadan. Safe, reliable, and affordable rides built for our community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-secondary-500 transition-colors font-semibold text-lg">
+                {/* <button className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-secondary-500 transition-colors font-semibold text-lg">
                   Book Your Ride
+                </button> */}
+                <button className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-secondary-500 transition-colors font-semibold text-lg">
+                  Join the Waitlist
                 </button>
                 <button className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary-500 transition-colors font-semibold text-lg">
-                  Become a Driver
+                  Become a Driver (Apply Now)
                 </button>
               </div>
             </div>
@@ -66,11 +71,11 @@ const LandingPage = () => {
               Why Choose Drop?
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              We're committed to providing the best ride-hailing experience with 
+              We're committed to providing the best ride-hailing experience with
               safety, convenience, and affordability at the core.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -80,8 +85,8 @@ const LandingPage = () => {
               },
               {
                 icon: Clock,
-                title: "Quick Pickup",
-                description: "Average pickup time of just 3 minutes"
+                title: "Quick Pickup Times",
+                description: "Designed for fast pickups as we grow our driver network"
               },
               {
                 icon: CreditCard,
@@ -90,8 +95,8 @@ const LandingPage = () => {
               },
               {
                 icon: Star,
-                title: "Top Rated",
-                description: "4.9-star rating from millions of satisfied riders"
+                title: "4.9-star rating",
+                description: "Built on rider safety and satisfaction as our top priorities"
               }
             ].map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-neutral-100">
@@ -130,7 +135,7 @@ const LandingPage = () => {
                 description: "Open the app, enter your destination, and request a ride in seconds."
               },
               {
-                step: "02", 
+                step: "02",
                 title: "Get Matched",
                 description: "We'll connect you with a nearby driver and show you their arrival time."
               },
@@ -183,10 +188,14 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { number: "2M+", label: "Happy Riders" },
-              { number: "50K+", label: "Active Drivers" },
-              { number: "100+", label: "Cities Served" },
-              { number: "4.9", label: "Average Rating" }
+              // { number: "2M+", label: "Happy Riders" },
+              // { number: "50K+", label: "Active Drivers" },
+              // { number: "100+", label: "Cities Served" },
+              // { number: "4.9", label: "Average Rating" }
+              { number: "Launching Soon", label: "Be among the first riders" },
+              { number: "Now Recruiting", label: "Drivers wanted" },
+              { number: "Expanding", label: "Cities coming online" },
+              { number: "Our Promise", label: "Safe, reliable rides" }
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl lg:text-5xl font-bold text-primary-500 mb-2">

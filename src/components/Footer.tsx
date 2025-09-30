@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Car, Mail, Phone, MapPin } from 'lucide-react';
+import { Car, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -59,6 +58,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-primary-100">
               <li>Ride Booking</li>
+              <li>Errand Requests</li>
               <li>Driver Partnership</li>
               <li>24/7 Support</li>
               <li>Safety First</li>
@@ -69,7 +69,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-400 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-primary-100 text-sm">
-            © 2025 Drop. All rights reserved.
+            © 2025 DropQuest. All rights reserved.
           </p>
           <p className="text-primary-100 text-sm mt-2 md:mt-0">
             Made with ❤️ for better transportation
