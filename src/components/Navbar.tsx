@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, Car } from 'lucide-react';
-// import dropLogo from "../assets/images/drop-logo.svg"
+// import dropLogo from "../assets/images/Drop.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
               <Car className="h-6 w-6 text-white" />
             </div>
             <span className="text-2xl font-bold text-primary-500">Drop</span>
-            {/* <img src={dropLogo} alt="Drop Logo" className="h-16 w-16" /> */}
+            {/* <img src={dropLogo} alt="Drop Logo" className="h-16 w-16 logo-bold" /> */}
           </NavLink>
 
           {/* Desktop Navigation */}

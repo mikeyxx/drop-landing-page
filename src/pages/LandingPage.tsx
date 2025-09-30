@@ -172,8 +172,11 @@ const LandingPage = () => {
               Join millions of users who trust Drop for their daily transportation needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-secondary-400 px-8 py-4 rounded-lg hover:bg-neutral-50 transition-colors font-semibold text-lg">
+              {/* <button className="bg-white text-secondary-400 px-8 py-4 rounded-lg hover:bg-neutral-50 transition-colors font-semibold text-lg">
                 Download the App
+              </button> */}
+              <button className="bg-white text-secondary-400 px-8 py-4 rounded-lg hover:bg-neutral-50 transition-colors font-semibold text-lg">
+                Join the Waitlist
               </button>
               <button className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-secondary-400 transition-colors font-semibold text-lg">
                 Start Driving with Drop
