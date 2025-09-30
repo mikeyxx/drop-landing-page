@@ -1,0 +1,34 @@
+trigger: none
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: |
+      sudo apt update
+      sudo apt install -y mono-complete
+    displayName: 'Install Mono'
+
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '18.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      npm install
+      npm run build
+    displayName: 'npm install and build'
+
+  - task: NuGetCommand@2
+    inputs:
+      command: 'pack'
+      packagesToPack: '$(packageName)'
+      versioningScheme: 'byBuildNumber'
+
+
+  - task: NuGetCommand@2
+    inputs:
+      command: 'push'
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+      nuGetFeedType: 'internal'
+      publishVstsFeed: '0a810cd2-90f3-46f3-a0f6-28bc480e21f1'
