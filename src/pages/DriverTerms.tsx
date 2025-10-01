@@ -90,7 +90,7 @@ const DriverTerms = () => {
               <p className="text-neutral-700">
                 For questions about these terms, contact our driver support team at
                 <a href="mailto:support@use-drop.com" className="text-secondary-400 hover:text-secondary-500"> support@use-drop.com</a>{' '}
-                or call (+234) 08134953138.
+                or call (+234) 09134953138.
               </p>
             </section>
           </div>

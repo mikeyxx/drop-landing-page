@@ -24,7 +24,7 @@ const PassengerTerms = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-primary-500 mb-4">2. Account Registration</h2>
               <ul className="list-disc list-inside text-neutral-700 space-y-2">
-                <li>You must be 18 years or older to create an account</li>
+                <li>Passengers of all ages may ride with Drop. However, accounts must be created and managed by individuals 18 years or older, or with the consent of a parent/guardian.</li>
                 <li>Provide accurate and current information</li>
                 <li>Maintain security of your account credentials</li>
                 <li>One account per person</li>
@@ -88,7 +88,7 @@ const PassengerTerms = () => {
               <p className="text-neutral-700">
                 For questions about these terms, contact our passenger support team at
                 <a href="mailto:support@use-drop.com" className="text-secondary-400 hover:text-secondary-500"> support@use-drop.com</a>{' '}
-                or call (+234) 08134953138.
+                or call (+234) 09134953138.
               </p>
             </section>
           </div>
