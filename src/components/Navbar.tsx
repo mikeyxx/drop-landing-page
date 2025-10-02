@@ -22,6 +22,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-2 group">
+            <div className="bg-primary-500 p-2 rounded-lg group-hover:bg-primary-600 transition-colors hidden md:block">
+              <Car className="h-6 w-6 text-white" />
+            </div>
             <span className="text-2xl font-bold text-primary-500 flex items-center">
               Dr
               <MapPin className="inline-block h-[1em] w-[1em] align-baseline text-primary-500" />
