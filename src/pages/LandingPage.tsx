@@ -189,7 +189,7 @@ const LandingPage = () => {
       {/* Stats Section */}
       <section className="py-20 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {[
               // { number: "2M+", label: "Happy Riders" },
               // { number: "50K+", label: "Active Drivers" },
@@ -201,10 +201,10 @@ const LandingPage = () => {
               { number: "Our Promise", label: "Safe, reliable rides" }
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl lg:text-5xl font-bold text-primary-500 mb-2">
+                <div className="text-xl sm:text-2xl lg:text-5xl font-bold text-primary-500 mb-2">
                   {stat.number}
                 </div>
-                <div className="text-neutral-600 font-medium">
+                <div className="text-xs sm:text-sm lg:text-base text-neutral-600 font-medium">
                   {stat.label}
                 </div>
               </div>

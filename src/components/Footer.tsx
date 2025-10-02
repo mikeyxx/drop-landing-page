@@ -9,9 +9,6 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-white p-2 rounded-lg">
-                <Car className="h-6 w-6 text-primary-500" />
-              </div>
               <span className="text-2xl font-bold">Drop</span>
             </div>
             <p className="text-primary-100 mb-6 max-w-md">
