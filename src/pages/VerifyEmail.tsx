@@ -20,11 +20,13 @@ const VerifyEmail: React.FC = () => {
             return;
         }
 
+        const url = import.meta.env.DEV ?
+            `${import.meta.env.VITE_API_URL}/user/verify-email?token=${token}` :
+            `${window.env?.VITE_API_URL}/user/verify-email?token=${token}`
+
         const verify = async () => {
             try {
-                const res = await fetch(
-                    `${import.meta.env.VITE_API_URL}/user/verify-email?token=${token}`
-                );
+                const res = await fetch(url);
                 const data = await res.json();
 
                 if (data.success) {
