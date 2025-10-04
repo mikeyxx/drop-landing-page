@@ -31,7 +31,7 @@ const VerifyEmail: React.FC = () => {
 
                 if (data.success) {
                     setStatus("success");
-                    setMessage("Your email has been verified successfully! You can now log in.");
+                    setMessage("Your email has been verified successfully.");
                 } else {
                     setStatus("error");
                     setErrorType(data.type || "server");
