@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Car, Mail } from 'lucide-react';
+import droplogo from "../assets/images/drop-logo-white.svg"
 
 const Footer = () => {
   return (
@@ -9,8 +10,9 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <span className="text-2xl font-bold">Drop</span>
+              <img src={droplogo} alt='' width={100} height={80} />
             </div>
+
             <p className="text-primary-100 mb-6 max-w-md">
               Your reliable ride-hailing service. Safe, convenient, and affordable transportation
               whenever you need it.
