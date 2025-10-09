@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, Car, MapPin } from 'lucide-react';
+import { Menu, X, Car } from 'lucide-react';
 import dropLogo from "../assets/images/drop-logo.svg"
 
 const Navbar = () => {
@@ -25,11 +25,6 @@ const Navbar = () => {
             <div className="bg-primary-500 p-2 rounded-lg group-hover:bg-primary-600 transition-colors hidden md:block">
               <Car className="h-6 w-6 text-white" />
             </div>
-            {/* <span className="text-2xl font-bold text-primary-500 flex items-center">
-              Dr
-              <MapPin className="inline-block h-[1em] w-[1em] align-baseline text-primary-500" />
-              p
-            </span> */}
             <img src={dropLogo} alt='' width={100} height={80} />
           </NavLink>
 
