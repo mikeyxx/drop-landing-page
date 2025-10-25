@@ -6,6 +6,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import VerifyEmail from './pages/VerifyEmail';
+import Support from './pages/Support';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/driver-terms" element={<DriverTerms />} />
           <Route path="/passenger-terms" element={<PassengerTerms />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/verify-email" element={<VerifyEmail />} />
         </Routes>
         <Footer />

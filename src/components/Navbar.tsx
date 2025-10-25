@@ -64,6 +64,14 @@ const Navbar = () => {
             >
               Privacy
             </NavLink>
+            <NavLink
+              to="/support"
+              className={({ isActive }) =>
+                `${baseLinkClasses} ${isActive ? activeClasses : inactiveClasses}`
+              }
+            >
+              Support
+            </NavLink>
             <div className="flex items-center space-x-4">
               <button className="bg-secondary-400 text-white px-6 py-2 rounded-lg hover:bg-secondary-500 transition-colors font-semibold">
                 Get Started
@@ -125,6 +133,16 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Privacy Policy
+              </NavLink>
+              <NavLink
+                to="/support"
+                className={({ isActive }) =>
+                  `block px-3 py-2 ${baseLinkClasses} ${isActive ? activeClasses : inactiveClasses
+                  }`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Support
               </NavLink>
               <div className="px-3 py-2">
                 <button className="w-full bg-secondary-400 text-white px-6 py-2 rounded-lg hover:bg-secondary-500 transition-colors font-semibold">
