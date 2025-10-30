@@ -66,22 +66,29 @@ const PrivacyPolicy = () => {
               <p className="text-neutral-700 mb-4">
                 We retain your information for as long as your account is active and as necessary
                 to provide our services, comply with legal and regulatory requirements, enforce our
-                agreements, and resolve disputes. Some records may be kept for a period of time after
-                account deletion where required by law or for legitimate business purposes.
-                You may request account deletion at any time through the app or by contacting our
-                support team.
+                agreements, and resolve disputes. When you request account deletion, Drop permanently
+                removes your personal information from our active systems and anonymizes any remaining
+                records required for internal auditing, fraud prevention, or legal compliance.
+                Your phone number, email, and identifying details are erased so that you may create
+                a new account in the future if you wish to use our services again.
               </p>
             </section>
-
 
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-primary-500 mb-4">7. Your Rights</h2>
               <ul className="list-disc list-inside text-neutral-700 space-y-2">
                 <li>Access and review the personal information we hold about you</li>
                 <li>Request corrections to inaccurate or incomplete data</li>
-                <li>Request deletion of your account and associated data, subject to legal or regulatory retention requirements</li>
+                <li>
+                  Request permanent deletion of your account and associated data at any time. Once
+                  deleted, your personal information cannot be recovered, but you may sign up again
+                  as a new user if you wish to return.
+                </li>
                 <li>Opt out of receiving promotional communications at any time</li>
-                <li>Control and update your location-sharing preferences through your device settings</li>
+                <li>
+                  Control and update your location-sharing and notification preferences through your
+                  device settings
+                </li>
               </ul>
               <p className="text-neutral-700 mt-4">
                 These rights may be exercised through the app or by contacting our support team,
