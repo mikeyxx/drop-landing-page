@@ -1,6 +1,9 @@
 import { Clock, Shield, Star, MapPin, CreditCard } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -18,17 +21,14 @@ const LandingPage = () => {
                 at your fingertips, whenever you need them.
               </p> */}
               <p className="text-xl text-primary-100 mb-8 max-w-lg">
-                Launching soon in Ibadan. Safe, reliable, and affordable rides built for our community.
+                Launching soon in Ibadan. Safe, reliable, and affordable rides built for your community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                {/* <button className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-secondary-500 transition-colors font-semibold text-lg">
+                <button onClick={() => navigate("/download")} className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-secondary-500 transition-colors font-semibold text-lg">
                   Book Your Ride
-                </button> */}
-                <button className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-secondary-500 transition-colors font-semibold text-lg">
-                  Join the Waitlist
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary-500 transition-colors font-semibold text-lg">
-                  Become a Driver (Apply Now)
+                <button onClick={() => navigate("/download")} className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary-500 transition-colors font-semibold text-lg">
+                  Become a Driver
                 </button>
               </div>
             </div>
@@ -53,7 +53,7 @@ const LandingPage = () => {
                       <p className="text-primary-100">456 Business Ave</p>
                     </div>
                   </div>
-                  <button className="w-full bg-secondary-400 text-white py-3 rounded-lg hover:bg-secondary-500 transition-colors font-semibold">
+                  <button onClick={() => navigate("/download")} className="w-full bg-secondary-400 text-white py-3 rounded-lg hover:bg-secondary-500 transition-colors font-semibold">
                     Find Your Ride
                   </button>
                 </div>
@@ -172,13 +172,10 @@ const LandingPage = () => {
               Join millions of users who trust Drop for their daily transportation needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {/* <button className="bg-white text-secondary-400 px-8 py-4 rounded-lg hover:bg-neutral-50 transition-colors font-semibold text-lg">
+              <button onClick={() => navigate("/download")} className="bg-white text-secondary-400 px-8 py-4 rounded-lg hover:bg-neutral-50 transition-colors font-semibold text-lg">
                 Download the App
-              </button> */}
-              <button className="bg-white text-secondary-400 px-8 py-4 rounded-lg hover:bg-neutral-50 transition-colors font-semibold text-lg">
-                Join the Waitlist
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-secondary-400 transition-colors font-semibold text-lg">
+              <button onClick={() => navigate("/download")} className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-secondary-400 transition-colors font-semibold text-lg">
                 Start Driving with Drop
               </button>
             </div>

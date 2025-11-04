@@ -72,11 +72,12 @@ const Navbar = () => {
             >
               Support
             </NavLink>
-            <div className="flex items-center space-x-4">
+            <NavLink to="/download">
               <button className="bg-secondary-400 text-white px-6 py-2 rounded-lg hover:bg-secondary-500 transition-colors font-semibold">
                 Get Started
               </button>
-            </div>
+            </NavLink>
+
           </div>
 
           {/* Mobile menu button */}
@@ -144,11 +145,11 @@ const Navbar = () => {
               >
                 Support
               </NavLink>
-              <div className="px-3 py-2">
+              <NavLink to="/download">
                 <button className="w-full bg-secondary-400 text-white px-6 py-2 rounded-lg hover:bg-secondary-500 transition-colors font-semibold">
                   Get Started
                 </button>
-              </div>
+              </NavLink>
             </div>
           </div>
         )}

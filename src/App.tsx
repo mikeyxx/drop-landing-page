@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import VerifyEmail from './pages/VerifyEmail';
 import Support from './pages/Support';
+import DownloadPage from './pages/DownloadPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/support" element={<Support />} />
           <Route path="/verify-email" element={<VerifyEmail />} />
+          <Route path="/download" element={<DownloadPage />} />
         </Routes>
         <Footer />
       </div>
