@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 import VerifyEmail from './pages/VerifyEmail';
 import Support from './pages/Support';
 import DownloadPage from './pages/DownloadPage';
+import DeleteDropAccount from './pages/DeleteDropAccount';
+import DeleteDropDriverAccount from './pages/DeleteDropDriverAccount';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/support" element={<Support />} />
           <Route path="/verify-email" element={<VerifyEmail />} />
           <Route path="/download" element={<DownloadPage />} />
+          <Route path="/delete-drop-account" element={<DeleteDropAccount />} />
+          <Route path="/delete-drop-driver-account" element={<DeleteDropDriverAccount />} />
         </Routes>
         <Footer />
       </div>

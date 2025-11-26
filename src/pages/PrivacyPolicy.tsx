@@ -64,13 +64,22 @@ const PrivacyPolicy = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-primary-500 mb-4">6. Data Retention</h2>
               <p className="text-neutral-700 mb-4">
-                We retain your information for as long as your account is active and as necessary
-                to provide our services, comply with legal and regulatory requirements, enforce our
-                agreements, and resolve disputes. When you request account deletion, Drop permanently
-                removes your personal information from our active systems and anonymizes any remaining
-                records required for internal auditing, fraud prevention, or legal compliance.
-                Your phone number, email, and identifying details are erased so that you may create
-                a new account in the future if you wish to use our services again.
+                We retain your information for as long as your account is active and as necessary to
+                provide the Drop services. When you request account deletion through the app or by
+                email, Drop permanently removes your personal information from our active systems.
+                This includes your name, email, phone number, profile details, trip or delivery
+                history, verification information, and any other data associated with your
+                Drop or Drop Driver account.
+
+                Some information may be retained in anonymized or aggregated form for internal
+                auditing, fraud prevention, safety monitoring, or legal and regulatory compliance.
+                For driver accounts, certain records such as completed trip metadata, payout logs,
+                regulatory identifiers, or documents required for tax or financial reporting may be
+                retained for the minimum period required by applicable law. These retained records
+                are not used to identify you and are securely stored with restricted access.
+
+                Once deletion is complete, your personal identifiers (such as phone number and
+                email) are removed so that you may create a new account in the future if you choose.
               </p>
             </section>
 
