@@ -21,7 +21,7 @@ const LandingPage = () => {
                 at your fingertips, whenever you need them.
               </p> */}
               <p className="text-xl text-primary-100 mb-8 max-w-lg">
-                Launching soon in Ibadan. Safe, reliable, and affordable rides built for your community.
+                Safe, reliable, and affordable rides built for your community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button onClick={() => navigate("/download")} className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-secondary-500 transition-colors font-semibold text-lg">
@@ -192,7 +192,7 @@ const LandingPage = () => {
               // { number: "50K+", label: "Active Drivers" },
               // { number: "100+", label: "Cities Served" },
               // { number: "4.9", label: "Average Rating" }
-              { number: "Launching Soon", label: "Be among the first riders" },
+              { number: "Early Access", label: "Be part of our journey" },
               { number: "Now Recruiting", label: "Drivers wanted" },
               { number: "Expanding", label: "Cities coming online" },
               { number: "Our Promise", label: "Safe, reliable rides" }
