@@ -68,7 +68,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-400 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-primary-100 text-sm">
-            © 2025 DropQuest. All rights reserved.
+            © 2026 DropQuest. All rights reserved.
           </p>
           <p className="text-primary-100 text-sm mt-2 md:mt-0">
             Made with ❤️ for better transportation
